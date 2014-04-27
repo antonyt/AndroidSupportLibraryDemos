@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android Support Library Demos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="fragments_title">Fragments</string>
+    <string name="loaders_title">Loaders</string>
+    <string name="viewpager_title">ViewPager</string>
+    <string name="nav_utils_title">NavUtils</string>
+    <string name="notifications_title">NotificationCompat</string>
+    <string name="sharing_title">ShareCompat</string>
+    <string name="nested_fragments_title">Nested Fragments</string>
+    <string name="drawer_layout_title">DrawerLayout</string>
+    <string name="grid_layout_title">GridLayout</string>
+    <string name="wakeful_broadcast_receiver_title">WakefulBroadcastReceiver</string>
+    <string name="action_bar_compat_title">ActionBarCompat</string>
+    <string name="swipe_refresh_layout_title">SwipeRefreshLayout</string>
+
+    <string name="drawer_open">Draw Open</string>
+    <string name="drawer_close">Draw Close</string>
+
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+
+</resources>

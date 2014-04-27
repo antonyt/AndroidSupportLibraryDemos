@@ -1,0 +1,16 @@
+bin/
+gen/
+.settings
+target/
+build/
+local.properties
+.gradle
+*.iml
+.idea
+.classpath
+.project
+
+*.DS_Store
+
+junit-report.xml
+lint-results.xml

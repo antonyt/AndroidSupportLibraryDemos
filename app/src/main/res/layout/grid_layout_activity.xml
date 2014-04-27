@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="4">
+
+    <TextView
+            android:text="1"
+            app:layout_columnSpan="4"
+            app:layout_gravity="center_horizontal"
+            android:padding="@dimen/normal_padding"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:text="this is the second cell"
+            app:layout_columnSpan="2"
+            android:padding="@dimen/normal_padding"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:text="3"
+            android:padding="@dimen/normal_padding"
+            android:textSize="20sp"/>
+
+    <android.support.v7.widget.Space />
+
+    <TextView
+            android:text="4"
+            app:layout_columnSpan="2"
+            app:layout_gravity="center_horizontal"
+            android:padding="@dimen/normal_padding"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:text="5"
+            app:layout_gravity="right"
+            android:padding="@dimen/normal_padding"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:text="6"
+            android:padding="@dimen/normal_padding"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:text="cell 7"
+            app:layout_column="2"
+            android:padding="@dimen/normal_padding"
+            android:textSize="20sp"/>
+
+</android.support.v7.widget.GridLayout>

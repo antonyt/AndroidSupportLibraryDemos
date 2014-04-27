@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.antonyt.demos.androidsupportlibrary">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name="com.antonyt.demos.androidsupportlibrary.MainActivity"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".fragment.FragmentExampleActivity"/>
+        <activity android:name=".loader.LoaderExampleActivity"/>
+        <activity android:name=".viewpager.ViewPagerExampleActivity"/>
+
+        <activity
+                android:name=".navutils.NavUtilsExampleActivity"
+                android:parentActivityName=".MainActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MainActivity"/>
+        </activity>
+        <activity
+                android:name=".navutils.NavUtilsExampleChildActivity"
+                android:parentActivityName=".navutils.NavUtilsExampleActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".navutils.NavUtilsExampleActivity"/>
+        </activity>
+
+        <activity android:name=".notifications.NotificationsExampleActivity"/>
+        <activity android:name=".sharing.SharingExampleActivity"/>
+        <activity android:name=".sharing.SharingTargetExampleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <data android:mimeType="text/plain"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".nestedfragment.NestedFragmentExampleActivity"/>
+        <activity android:name=".drawerlayout.DrawerLayoutExampleActivity"/>
+        <activity android:name=".gridlayout.GridLayoutExampleActivity"/>
+
+        <activity android:name=".wakefulbroadcastreceiver.WakefulBroadcastReceiverExampleActivity"/>
+
+        <receiver android:name=".wakefulbroadcastreceiver.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.antonyt.demos.androidsupportlibrary.wakefulAction"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".wakefulbroadcastreceiver.MyService"/>
+
+        <activity
+                android:name=".actionbarcompat.ActionBarCompatExampleActivity"
+                android:parentActivityName=".MainActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MainActivity"/>
+        </activity>
+
+        <activity android:name=".swiperefreshlayout.SwipeRefreshLayoutExampleActivity"/>
+
+    </application>
+
+</manifest>
